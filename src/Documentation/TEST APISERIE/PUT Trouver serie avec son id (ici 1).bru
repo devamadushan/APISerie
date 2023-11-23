@@ -1,0 +1,47 @@
+meta {
+  name: PUT Trouver serie avec son id (ici 1)
+  type: http
+  seq: 6
+}
+
+put {
+  url: http://localhost:8080/series/6
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "id": 6,
+    "nom": "Loki",
+    "lienImage": "",
+    "vo": "anglais",
+    "premise": "L'empire galactique, dirigé par la dynastie génétique des clones de l'Empereur Cléon Ier, se voit prédire par la psychohistoire de Hari Seldon un effondrement suivi de 30 000 ans de ténèbres avant qu'un second empire galactique ne prenne la relève. ",
+    "genres": [
+      {
+        "id": 1,
+        "nom": "Drame"
+      },
+      {
+        "id": 9,
+        "nom": "Multiverse"
+      }
+    ],
+    "saisons": [
+      {
+        "id": 11,
+        "num": 1,
+        "nom": "Saison 1",
+        "annee": 2021,
+        "nombreEpisode": 6
+      },
+      {
+        "id": 12,
+        "num": 2,
+        "nom": "Saison 2",
+        "annee": 2023,
+        "nombreEpisode": 6
+      }
+    ]
+  }
+}
